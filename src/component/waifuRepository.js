@@ -3,8 +3,8 @@ import img from './img1.jpg';
 
 let data = [{
     id: uuid1(),
-    image: 'https://static.techprincess.it/wp-content/uploads/sites/5/2019/10/jojo-lucca-comics-and-games-2019-araki-star-comics-week-day-780x405.jpg',
-    name: "Una a caso"
+    image: 'https://www.tvovermind.com/wp-content/uploads/2018/12/Dio-750x422.jpg',
+    name: "Dio Brando"
 }]
 
 // const signIn = (username, password) => new Promise(resolve => {
