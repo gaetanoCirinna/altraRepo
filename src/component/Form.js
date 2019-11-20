@@ -28,9 +28,10 @@ class Form extends Component {
         return ( 
             <div className="form">
                 <form onSubmit={this.props.submit}>
-                    <input value={this.props.value} onChange={this.props.change}></input>
+                    <input className="form__name"value={this.props.value} onChange={this.props.change}></input>
+                    <input className="form__file" type="file" ref={inputFile => {this.inputFile = inputFile}} onChange={this.upload}/>
+
                     <button type="submit">Button</button>
-                    <input type="file" ref={inputFile => {this.inputFile = inputFile}} onChange={this.upload}/>
                 </form>
             </div>
          );

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Tot from './Tot'
+import img from './logo.png';
 
 
 
@@ -19,10 +20,13 @@ import Tot from './Tot'
     render() {
       return (
         <form onSubmit={this.handleSignIn.bind(this)}>
-          <h3>Sign in</h3>
-          <input type="text" ref="username" placeholder="enter you username" />
-          <input type="password" ref="password" placeholder="enter password" />
-          <input type="submit" value="Login" />
+          <div className="login">
+
+            <h3>SIGN IN</h3>
+            <input className="login__name" type="text" ref="username" placeholder="enter you username" />
+            <input className="login__name" type="password" ref="password" placeholder="enter password" />
+            <input className="login__name bottoneone" type="submit" value="Login" />
+          </div>   
         </form>
       )
     }
@@ -63,7 +67,12 @@ import Tot from './Tot'
       // make sure we keep our scope to App
       return (
         <div>
-          <h1>My cool App</h1>
+          <div className="header">
+            <div className="logo">
+              <img src={img}></img>
+            </div>
+              <h1>Waifu material!</h1>
+          </div>
           { 
             (this.state.user) ? 
               <Tot 

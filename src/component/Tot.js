@@ -99,8 +99,10 @@ class Tot extends Component {
 
         return (
             <div>
-
+                <div className="cards">
                 {cards}
+                </div>
+                
                 <Form
                     submit={this.submit}
                     click={this.click}
