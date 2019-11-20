@@ -31,7 +31,7 @@ class Form extends Component {
                     <input className="form__name"value={this.props.value} onChange={this.props.change} placeholder="Inserisci il nome della waifu!"></input>
                     <input className="form__file" type="file" ref={inputFile => {this.inputFile = inputFile}} onChange={this.upload}/>
 
-                    <button type="submit">Schiacciami</button>
+                    <button type="submit">Schiacciami forte!</button>
                 </form>
             </div>
          );
